@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music Player</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200"
+		/>
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/media.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="search-input">
+				<div class="input-icon">
+					<span class="material-symbols-rounded"> search </span>
+				</div>
+				<input type="text" class="input input-search" placeholder="Search" />
+			</div>
+			<div class="account">
+				<img src="./images/avatar.png" alt="Avatar" />
+			</div>
+		</header>
+		<!-- /.header -->
+
+		<sidebar class="sidebar">
+			<div class="sidebar__section">
+				<strong class="title-section">Music Player</strong>
+				<nav>
+					<a href="./index.html" class="active">Main</a>
+					<a href="#">Feed</a>
+					<a href="#">Radio</a>
+				</nav>
+			</div>
+			<div class="sidebar__section">
+				<strong class="title-section"> My Music </strong>
+				<nav>
+					<a href="#">Library</a>
+					<a href="#">Albums</a>
+					<a href="#">Playlist</a>
+					<a href="#">Artist</a>
+					<a href="#">Concerts</a>
+					<a href="#">History</a>
+				</nav>
+			</div>
+		</sidebar>
+		<!-- /.sidebar -->
+
+		<content class="content">
+			<div class="content__header">
+				<div class="cover">
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+					<img src="./images/avatar.png" alt="cover">
+				</div>
+				<!-- /.cover -->
+				<div class="descr">
+					<div class="title-section">Album</div>
+					<h2>Main Playlist</h2>
+					<!-- /.title -->
+					<div class="author title-section">
+						Artist <span class="author__value"> Mujuice </span>
+						<!-- /.author__text -->
+					</div>
+					<!-- /.author -->
+					<div class="date title-section">2022</div>
+					<!-- /.date -->
+					<div class="buttons">
+						<button class="button-primary button-primary-icon">
+							<div class="icon">
+								<span class="material-symbols-rounded"> play_arrow </span>
+							</div>
+							Play
+						</button>
+						<!-- /.button-primary -->
+						<button class="button-icon-line">
+							<span class="material-symbols-rounded"> favorite </span>
+						</button>
+						<!-- /.button-icon-line -->
+						<button class="button-icon-line">
+							<span class="material-symbols-rounded"> more_horiz </span>
+						</button>
+						<!-- /.button-icon-line -->
+					</div>
+					<!-- /.buttons -->
+				</div>
+			</div>
+			<!-- /.content__header -->
+			<div class="content__treks">
+				
+			</div>
+			<!-- /.content__treks -->
+		</content>
+		<!-- /.content -->
+
+		<section class="section-player">
+			<audio src="./files/DK_Hypocrite.mp3">
+				Your browser does not support the
+				<code>audio</code> element.
+			</audio>
+			<div class="timer">
+				<span class="timer-count">12:12</span>
+				<div class="time"></div>
+			</div>
+			<div class="section-player__item section-player__item-1">
+				<div class="player__options">
+					<button class="button-icon prev">
+						<span class="material-symbols-rounded"> skip_previous </span>
+					</button>
+					<button class="button-icon play">
+						<span class="material-symbols-rounded"> pause </span>
+						<span class="material-symbols-rounded"> play_arrow </span>
+					</button>
+					<button class="button-icon next">
+						<span class="material-symbols-rounded"> skip_next </span>
+					</button>
+					<button class="button-icon">
+						<span class="material-symbols-rounded"> queue_music </span>
+					</button>
+				</div>
+				<div class="player__trake">
+					<div class="trake-bg">
+						<img src="#" alt="Cover" />
+					</div>
+					<div class="trake-text">
+						<strong>Юность</strong>
+						<span class="author">Mujuice</span>
+					</div>
+				</div>
+				<div class="player__options-dop">
+					<button class="button-icon like">
+						<span class="material-symbols-rounded"> favorite </span>
+					</button>
+					<button class="button-icon">
+						<span class="material-symbols-rounded"> share </span>
+					</button>
+					<button class="button-icon ">
+						<span class="material-symbols-rounded"> add </span>
+					</button>
+					<button class="button-icon like">
+						<span class="material-symbols-rounded"> block </span>
+					</button>
+				</div>
+			</div>
+			<div class="section-player__item section-player__item-2">
+				<div class="player__options-dop">
+					<button class="button-icon like">
+						<span class="material-symbols-rounded"> high_quality </span>
+					</button>
+					<button class="button-icon like">
+						<span class="material-symbols-rounded"> shuffle </span>
+					</button>
+					<button class="button-icon like">
+						<span class="material-symbols-rounded"> repeat </span>
+					</button>
+					<button class="button-icon value">
+						<span class="material-symbols-rounded"> volume_up </span>
+						<span class="material-symbols-rounded"> volume_down </span>
+						<span class="material-symbols-rounded"> volume_off </span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- /.section-player -->
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
