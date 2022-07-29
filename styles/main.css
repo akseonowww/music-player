@@ -164,6 +164,20 @@ body {
    width: 14px;
    background-color: rgb(225, 181, 37);
    border-radius: 12px;
+	animation: radar .8s infinite alternate;
+}
+
+@keyframes radar {
+	from {
+		transform: scale(.5);
+		animation-timing-function: ease-out;
+	}
+	50%	{
+		transition: scale(.75);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 .content__treks .treck.active .info .id {

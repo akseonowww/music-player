@@ -79,9 +79,26 @@
 		justify-content: center;
 	}
 
+	.content__treks {
+		margin-right: 0;
+		gap: 0;
+	}
+	.content__treks .treck {
+		padding: 16px 28px;
+	}
+
+	.content__treks .treck.active {
+		border-radius: 0;
+	}
+
 	.descr {
 		align-items: center;
 		gap: 12px;
+	}
+
+	.author__value {
+		margin: 0;
+		width: 70%;
 	}
 
 	.author {
@@ -91,34 +108,34 @@
 	}
 
 	/* section-player */
-	.section-player { 
-      padding-top: 24px;
-      flex-direction: column;
-      align-items: center;
-   }
+	.section-player {
+		padding-top: 24px;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.section-player__item-1 {
 		flex-direction: column-reverse;
-      align-items: center; 
-      justify-content: center;
-      width: 100%;  
-      gap: 12px;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		gap: 12px;
 	}
 
 	/* .section-player .section-player__item-2, */
-   /* .section-player__item-1  */
-   .player__options-dop {
+	/* .section-player__item-1  */
+	.player__options-dop {
 		display: none;
 	}
 
-   .player__trake {
-      width: 100%;
-      /* margin: 0 auto; */
-      gap: 12px;
-   }
-   .player__trake .trake-bg {
-      height: 50px;
-      min-width: 50px;
-      border-radius: 6px;
-   }
+	.player__trake {
+		width: 100%;
+		/* margin: 0 auto; */
+		gap: 12px;
+	}
+	.player__trake .trake-bg {
+		height: 50px;
+		min-width: 50px;
+		border-radius: 6px;
+	}
 }
